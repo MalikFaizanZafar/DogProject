@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../../pages/home/home';
-import { MainPage } from '../../pages/main/main';
 
 /**
- * Generated class for the LoginPage page.
+ * Generated class for the MainPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,21 +10,15 @@ import { MainPage } from '../../pages/main/main';
 
 @IonicPage()
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+  selector: 'page-main',
+  templateUrl: 'main.html',
 })
-export class LoginPage {
+export class MainPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
-  }
-  toHomePage(){
-    this.navCtrl.pop();
-  }
-  toMainPage(){
-    this.navCtrl.push(MainPage);
+    console.log('ionViewDidLoad MainPage');
   }
 }
