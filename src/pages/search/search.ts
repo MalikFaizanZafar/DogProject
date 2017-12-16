@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SearchPage } from '../../pages/search/search';
 
 /**
- * Generated class for the MainPage page.
+ * Generated class for the SearchPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,18 +10,16 @@ import { SearchPage } from '../../pages/search/search';
 
 @IonicPage()
 @Component({
-  selector: 'page-main',
-  templateUrl: 'main.html',
+  selector: 'page-search',
+  templateUrl: 'search.html',
 })
-export class MainPage {
+export class SearchPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MainPage');
+    console.log('ionViewDidLoad SearchPage');
   }
-  toSearchPage(){
-    this.navCtrl.push(SearchPage);
-  }
+
 }
