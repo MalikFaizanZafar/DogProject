@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ReportPage } from '../../pages/report/report';
 
 /**
  * Generated class for the SearchPage page.
@@ -22,4 +23,7 @@ export class SearchPage {
     console.log('ionViewDidLoad SearchPage');
   }
 
+  toReportPage(){
+    this.navCtrl.push(ReportPage);
+  }
 }
