@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SearchPage } from '../../pages/search/search';
 import { ReportPage } from '../../pages/report/report';
 import { DogPoundPage } from '../../pages/dog-pound/dog-pound';
+import { TrackPage } from '../../pages/track/track';
 
 /**
  * Generated class for the MainPage page.
@@ -32,5 +33,8 @@ export class MainPage {
   }
   toDogPoundPage(){
     this.navCtrl.push(DogPoundPage);
+  }
+  toTrackPage(){
+    this.navCtrl.push(TrackPage);
   }
 }

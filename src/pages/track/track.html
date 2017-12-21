@@ -1,17 +1,54 @@
 
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="blue">
     <ion-title>Dirty Dog Tracker</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-  <ion-img id="track_">
+<ion-content padding id="trackPage" style="border: 1px solid #f3f3f3;" no-bounce>
+  <ion-row>
+    <ion-col id="trackImage" col-12 ></ion-col>
+  </ion-row>
+  <form>
+      <ion-item col-12>
+        <ion-input type="text"  name="cellNumber" placeholder="Cell Number" style="font-size : 10px;"></ion-input>
+      </ion-item>
 
-  </ion-img>
+      <ion-item col-12>
+        <ion-input type="text"  name="workCellNumber" placeholder="Work Cell Number" style="font-size : 10px;"></ion-input>
+      </ion-item>
+
+      <ion-item col-12>
+        <ion-input type="email"  name="email" placeholder="Email" style="font-size : 10px;"></ion-input>
+      </ion-item>
+
+      <ion-item col-12>
+        <ion-input type="text"  name="fbuserName" placeholder="Facebook Username" style="font-size : 10px;"></ion-input>
+      </ion-item>
+
+      <ion-item col-12>
+        <ion-input type="text"  name="twitterName" placeholder="Twitter Username" style="font-size : 10px;"></ion-input>
+      </ion-item>
+
+      <ion-item col-12>
+        <ion-input type="text"  name="instagram" placeholder="Instagram Username" style="font-size : 10px;"></ion-input>
+      </ion-item>
+
+
+      <ion-item col-12>
+        <ion-label style="font-size : 10px;">City / Town</ion-label>
+          <ion-select name="cityTown">
+              <ion-option>Washinton DC</ion-option>
+              <ion-option>NewYork</ion-option>
+              <ion-option>Washinton DC</ion-option>
+          </ion-select>
+      </ion-item> <br>
+
+      <button ion-button type="submit" color="blue" col-10 offset-1 style="font-size : 12px;">Track</button> <br><br>
+    </form>
 
 </ion-content>
 
