@@ -1,15 +1,35 @@
-#main-bg {
-  background-image: url('../assets/imgs/page3-bg.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: 1px solid #F8F8F8;
+#dog-pound_Page {
+  background-image: none;
 }
 
+#dogPoundImage{
+  background-image: url('../assets/imgs/dog_pound_img0.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -45px;
+  padding-left: -10px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  width: 800px;
+  height: 300px;
+}
+.dpIcon{
+  font-size: 22px;
+}
+.dpItem{
+  margin-top: -50px;
+}
+.dprow{
+  border: 1px solid #E8E8E8;
+}
+.dpcount{
+  font-size: 13px;
+}
 #home{
   background-image: url('../assets/imgs/home.png');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .homeSpan{
   font-size: 8px;

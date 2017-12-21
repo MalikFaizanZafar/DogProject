@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {SearchPage } from '../../pages/search/search';
+import { DogPoundPage } from '../../pages/dog-pound/dog-pound';
 
 /**
  * Generated class for the ReportPage page.
@@ -26,6 +27,8 @@ export class ReportPage {
   toSearchPage(){
     this.navCtrl.pop();
   }
-
+  toDogPoundPage(){
+    this.navCtrl.push(DogPoundPage);
+  }
 
 }

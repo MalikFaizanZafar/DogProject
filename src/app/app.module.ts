@@ -10,6 +10,8 @@ import { LoginPage } from '../pages/login/login';
 import { MainPage } from '../pages/main/main';
 import { SearchPage } from '../pages/search/search';
 import { ReportPage } from '../pages/report/report';
+import { TrackPage } from '../pages/track/track';
+import { DogPoundPage } from '../pages/dog-pound/dog-pound';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ReportPage } from '../pages/report/report';
     LoginPage,
     MainPage,
     SearchPage,
-    ReportPage
+    ReportPage,
+    TrackPage,
+    DogPoundPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { ReportPage } from '../pages/report/report';
     LoginPage,
     MainPage,
     SearchPage,
-    ReportPage
+    ReportPage,
+    TrackPage,
+    DogPoundPage
   ],
   providers: [
     StatusBar,

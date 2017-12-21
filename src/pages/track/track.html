@@ -1,11 +1,17 @@
-<ion-header >
-  <ion-navbar color="blue">
-    <ion-title offset-1>
-      Dirty Dog Tracker
-    </ion-title>
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Dirty Dog Tracker</ion-title>
   </ion-navbar>
+
 </ion-header>
-<ion-content padding id="main-bg">
+
+
+<ion-content padding>
+  <ion-img id="track_">
+
+  </ion-img>
 
 </ion-content>
 
@@ -28,12 +34,12 @@
     <span class="homeSpan">Search</span>
   </ion-col>
 
-  <ion-col (click)="toReportPage()">
+  <ion-col>
     <ion-img id="report_dog" style="margin-left : 10px; margin-bottom : -7px;"></ion-img><br>
     <span class="homeSpan">Report a Dog</span>
   </ion-col>
 
-  <ion-col (click)="toDogPoundPage()">
+  <ion-col>
     <ion-img id="dog_pound" style="margin-left : 10px; margin-bottom : -7px;"></ion-img><br>
     <span class="homeSpan">Dog Pound</span>
   </ion-col>

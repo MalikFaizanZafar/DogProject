@@ -1,0 +1,100 @@
+<!--
+  Generated template for the DogPoundPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+  <ion-navbar color="blue">
+    <ion-title>Dirty Dog Tracker</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding id="dog-pound_Page">
+    <ion-row class="dprow" >
+      <ion-col id="dogPoundImage"></ion-col>
+      <ion-item class="dpItem">
+        <ion-icon name="ios-heart-outline" class="dpIcon"></ion-icon>&nbsp;<span class="dpcount">80</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ion-icon name="ios-chatboxes-outline" class="dpIcon"></ion-icon>&nbsp;&nbsp;<span class="dpcount">10</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ion-icon name="ios-git-merge-outline" style="transform: rotate(300deg);"></ion-icon>
+      </ion-item>
+
+      <ion-item padding>
+        <ion-label>Type</ion-label>
+        <ion-select>
+          <ion-option value="good">Good Dog</ion-option>
+          <ion-option value="bad">Bad Dog</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-col col-12>
+        Top Dogs
+      </ion-col>
+      <ion-col col-8>
+        <ion-item>
+          <p style="text-align: center ; font-size : 13px">Married Dogs</p>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-8>
+        <ion-item>
+          <p style="text-align: center ; font-size : 13px">Single Dogs</p>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-8>
+        <ion-item>
+          <p style="text-align: center ; font-size : 13px">Divorced Dogs</p>
+        </ion-item>
+      </ion-col>
+
+
+    </ion-row>
+
+
+
+</ion-content><br><br>
+
+<ion-footer id="homeFooter">
+
+<ion-row>
+
+  <ion-col>
+    <ion-img id="home" style="margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Home</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="my_dog" style="margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">My Dog</span>
+  </ion-col>
+
+  <ion-col (click)="toSearchPage()">
+    <ion-img id="search" style="margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Search</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="report_dog" style="margin-left : 10px; margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Report a Dog</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="dog_pound" style="margin-left : 10px; margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Dog Pound</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="map" style="margin-bottom : -7px;"></ion-img> <br>
+    <span class="homeSpan" style="margin-left : 2px;">Map</span>
+  </ion-col>
+
+</ion-row>
+
+</ion-footer>
