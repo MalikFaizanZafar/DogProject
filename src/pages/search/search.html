@@ -71,22 +71,40 @@
         <button ion-button type="submit" block color="blue"><ion-icon name="search"></ion-icon></button>
       </form>
 </ion-content>
-<ion-footer>
-  <ion-row id="footer">
-    <div id="home"  col-1 ></div>
-    <div  id="my_dog"  col-1 offset-1 ></div>
-    <ion-icon  name="search"  offset-1></ion-icon>
-    <div  id="report_dog"  col-1 offset-1 ></div>
-    <div id="dog_pound"  col-1 offset-1 ></div>
-    <div  id="map"  col-1 offset-1 ></div>
-  </ion-row>
-  <ion-row id="footer2">
-    <div col-1 ><span class="mainspan">Home</span></div>
-    <div col-1 offset-1><span class="mainspan">My Dog</span></div>
-    <div offset-1 col-1 (click)="toSearchPage()"><span class="mainspan">Search</span></div>
-    <div  col-1 offset-1><span class="mainspan" (click)="toReportPage()">Report A Dog</span></div>
-    <div col-1 offset-1><span class="mainspan">Dog Pound</span></div>
-    <div  col-1 offset-1><span class="mainspan">Map</span></div>
-  </ion-row>
+<ion-footer id="homeFooter">
+
+<ion-row>
+
+  <ion-col>
+    <ion-img id="home" style="margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Home</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="my_dog" style="margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">My Dog</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="search" style="margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Search</span>
+  </ion-col>
+
+  <ion-col (click)="toReportPage()">
+    <ion-img id="report_dog" style="margin-left : 10px; margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Report a Dog</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="dog_pound" style="margin-left : 10px; margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Dog Pound</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="map" style="margin-bottom : -7px;"></ion-img> <br>
+    <span class="homeSpan" style="margin-left : 2px;">Map</span>
+  </ion-col>
+
+</ion-row>
 
 </ion-footer>

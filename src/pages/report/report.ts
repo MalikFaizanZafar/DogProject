@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SearchPage } from '../../pages/search/search';
 
 /**
  * Generated class for the ReportPage page.
@@ -21,5 +22,10 @@ export class ReportPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReportPage');
   }
+
+  toSearchPage(){
+    this.navCtrl.pop();
+  }
+
 
 }

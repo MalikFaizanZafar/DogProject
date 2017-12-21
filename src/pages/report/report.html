@@ -16,44 +16,85 @@
 <ion-content padding class="reportContent">
  <form>
    <ion-item class="inputReport">
-     <ion-label>type</ion-label>
+     <ion-label floating>type</ion-label>
      <ion-select>
        <ion-option value="good">Good Dog</ion-option>
        <ion-option value="bad">Bad Dog</ion-option>
      </ion-select>
-   </ion-item><br>
+   </ion-item>
 
    <ion-item class="inputReport">
-     <ion-label>First Name</ion-label>
+     <ion-label floating>First Name</ion-label>
      <ion-input name="firstName" type="text"></ion-input>
-   </ion-item><br>
+   </ion-item>
 
    <ion-item class="inputReport">
-     <ion-label>Last Name</ion-label>
+     <ion-label floating>Last Name</ion-label>
      <ion-input name="lastName" type="text"></ion-input>
-   </ion-item><br>
+   </ion-item>
 
    <ion-item class="inputReport">
-     <ion-label>Cell Number</ion-label>
+     <ion-label floating>Cell Number</ion-label>
      <ion-input name="cellNumber" type="number"></ion-input>
-   </ion-item><br>
+   </ion-item>
 
    <ion-item class="inputReport">
-     <ion-label>E-mail</ion-label>
+     <ion-label floating>E-mail</ion-label>
      <ion-input name="email" type="email" ></ion-input>
-   </ion-item><br>
+   </ion-item>
 
    <ion-item class="inputReport">
-     <ion-label>Country</ion-label>
+     <ion-label floating>Country</ion-label>
      <ion-input name="country" type="text"></ion-input>
-   </ion-item><br>
+   </ion-item>
 
    <ion-item class="inputReport">
-     <ion-label>City/Town</ion-label>
+     <ion-label floating>City/Town</ion-label>
      <ion-input name="cityTown" type="text"></ion-input>
    </ion-item><br>
-    <ion-radio color="blue" checked></ion-radio>
-
-   <button ion-button type="submit" block color="blue"><ion-icon name="search"></ion-icon></button>
+    <ion-row>
+      <ion-radio color="blue" checked></ion-radio >
+        <span class="reportSpan" col-10 style="margin-top : 0px;">The info I have entered here is the truth and nothing but the truth and I fully understand that any false
+        information which I have entered here can be used against me in any court of law</span>
+    </ion-row><br>
+   <button ion-button type="submit" block color="blue">Submit</button>
  </form>
 </ion-content>
+
+<ion-footer id="homeFooter">
+
+<ion-row>
+
+  <ion-col>
+    <ion-img id="home" style="margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Home</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="my_dog" style="margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">My Dog</span>
+  </ion-col>
+
+  <ion-col (click)="toSearchPage()">
+    <ion-img id="search" style="margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Search</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="report_dog" style="margin-left : 10px; margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Report a Dog</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="dog_pound" style="margin-left : 10px; margin-bottom : -7px;"></ion-img><br>
+    <span class="homeSpan">Dog Pound</span>
+  </ion-col>
+
+  <ion-col>
+    <ion-img id="map" style="margin-bottom : -7px;"></ion-img> <br>
+    <span class="homeSpan" style="margin-left : 2px;">Map</span>
+  </ion-col>
+
+</ion-row>
+
+</ion-footer>
