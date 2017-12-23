@@ -23,11 +23,4 @@ export class SearchPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchPage');
   }
-
-  toReportPage(){
-    this.navCtrl.push(ReportPage);
-  }
-  toDogPoundPage(){
-    this.navCtrl.push(DogPoundPage);
-  }
 }

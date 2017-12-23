@@ -12,6 +12,7 @@ import { SearchPage } from '../pages/search/search';
 import { ReportPage } from '../pages/report/report';
 import { TrackPage } from '../pages/track/track';
 import { DogPoundPage } from '../pages/dog-pound/dog-pound';
+import { TabsPage } from '../pages/tabs/tabs';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DogPoundPage } from '../pages/dog-pound/dog-pound';
     SearchPage,
     ReportPage,
     TrackPage,
-    DogPoundPage
+    DogPoundPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { DogPoundPage } from '../pages/dog-pound/dog-pound';
     SearchPage,
     ReportPage,
     TrackPage,
-    DogPoundPage
+    DogPoundPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
